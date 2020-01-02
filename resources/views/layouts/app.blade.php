@@ -76,12 +76,13 @@
                 </div>
             </div>
         </nav>
+        <!-- Barra para agregar Servicios, modificar, etc -->
+            @include('barra')
 
-        <main class="py-4">
             @yield('content')
 
             
-        </main>
+        
     </div>
     @yield('script')
 </body>

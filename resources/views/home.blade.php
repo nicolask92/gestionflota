@@ -2,32 +2,37 @@
 
 @section('content')
 
-<div id="bootstrap-iso form" class="container-xl">
+<div id="bootstrap-iso form" class="container-xl py-4">
 
     <form autocomplete="off" method="POST">
         <div class="row" id="app">
-              <div>
-                  <vuejs-datepicker :typeable="true" :language="es" :value="dateVal" :format="dateFormat" class="col" name="fecha_c" placeholder="COMIENZO"></vuejs-datepicker>
+              <div class="col-sm-2">
+                  <vuejs-datepicker :typeable="true" :language="es" :value="dateVal" :format="dateFormat" name="fecha_c" placeholder="COMIENZO"></vuejs-datepicker>
               </div>
-              <div>
-                <vuejs-datepicker :typeable="true" :language="es" :value="dateVal" :format="dateFormat" class="col" name="fecha_f" placeholder="FIN"></vuejs-datepicker>
+              <div class="col-sm-2">
+                <vuejs-datepicker :typeable="true" :language="es" :value="dateVal" :format="dateFormat" name="fecha_f" placeholder="FIN"></vuejs-datepicker>
               </div>
-            <div class="col">
+            <div class="col-sm">
                     <input type="text" class="form-control" placeholder="PAX">
             </div>
-          <div class="col">
+          <div class="col-sm">
             <input type="text" class="form-control" placeholder="CLIENTE">
           </div>
-          <div class="col">
+          <div class="col-sm">
             <input type="text" class="form-control" placeholder="MOVIL">
           </div>
-          <div class="col">
-            <button type="button" class="btn btn-primary">Buscar</button>
+          <div class="col-sm">
+            <input type="text" class="form-control" placeholder="VOUCHER">
+          </div>
+          <div class="col-sm">
+            <button type="button" class="btn btn-primary btn-block">Buscar</button>
           </div>
         </div>
       </form>
 
 </div>
+
+@include('datos')
 
 
 @endsection

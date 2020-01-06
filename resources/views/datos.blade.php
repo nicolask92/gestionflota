@@ -8,7 +8,8 @@
 
 <div class="container-xl mt-3">
     <div class="table-responsive">
-    <table class="table table-sm table-bordered table-hover">
+      
+    <table class="table table-sm table-bordered table-hover" cellspacing="0" width="100%">
         <thead>
           <tr>
             <th scope="col">FECHA</th>

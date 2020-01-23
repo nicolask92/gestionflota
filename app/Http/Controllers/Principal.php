@@ -8,6 +8,8 @@ use App;
 class Principal extends Controller
 {
     public function index() {
-        return view('home');
+
+        $reservas = App\Reservar::all();
+        return view('home', compact('reservas'));
     }
 }
